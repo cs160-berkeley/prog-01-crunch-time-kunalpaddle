@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent" android:layout_height="64dp"
+    android:background="#FFFFFF">
+
+    <ImageView
+    android:id="@+id/item_icon"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="8dp"
+    />
+
+    <!-- title -->
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/item_icon"
+        android:layout_alignBaseline="@+id/item_counter"
+        android:textSize="18dp" />
+
+    <!-- counter -->
+    <TextView
+        android:id="@+id/item_counter"
+        android:maxWidth="96dp"
+        android:minWidth="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rectangle"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:singleLine="true"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/exercise_type"
+        android:layout_width="32dp"
+        android:layout_height="16dp"
+        android:layout_below="@+id/item_counter"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:text="Reps"
+        />
+
+
+
+</RelativeLayout>
